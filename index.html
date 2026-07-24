@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CALEIRA — Portuguese visual artist working with black-and-white photography." />
+  <title>CALEIRA — Visual Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CALEIRA home">CALEIRA</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Visual artist · Portugal</p>
+          <h1 id="hero-title">Silence.<br>Territory.<br>Absence.</h1>
+          <p class="intro">Black-and-white photographic work exploring human traces, memory and the tension between nature and the built environment.</p>
+          <a class="text-link" href="#work">View selected work <span aria-hidden="true">↘</span></a>
+        </div>
+        <figure class="hero-image reveal">
+          <svg viewBox="0 0 1000 1260" role="img" aria-label="Monochrome architectural placeholder for featured artwork">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#060606"/>
+                <stop offset="0.48" stop-color="#1a1a1a"/>
+                <stop offset="1" stop-color="#d7d4cc"/>
+              </linearGradient>
+              <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 0.13"/></feComponentTransfer></filter>
+            </defs>
+            <rect width="1000" height="1260" fill="#111"/>
+            <path d="M0 0H690L430 1260H0Z" fill="url(#g1)"/>
+            <rect x="655" y="0" width="345" height="1260" fill="#e4e1da"/>
+            <rect x="715" y="170" width="122" height="745" fill="#151515"/>
+            <rect x="855" y="320" width="145" height="595" fill="#5a5a58"/>
+            <path d="M0 1010L1000 870V1260H0Z" fill="#050505"/>
+            <rect width="1000" height="1260" filter="url(#grain)" opacity=".7"/>
+          </svg>
+          <figcaption>Featured work — replace with your strongest opening image</figcaption>
+        </figure>
+      </section>
+
+      <section id="work" class="work section-pad" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Projects</h2>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <a href="#" aria-label="Open Limites project">
+              <div class="project-image landscape image-limites" role="img" aria-label="Abstract monochrome wall and distant village placeholder"></div>
+              <div class="project-meta">
+                <h3>Limites</h3>
+                <p>Territory · Architecture · 2026</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <a href="#" aria-label="Open Resistência project">
+              <div class="project-image portrait image-resistencia" role="img" aria-label="Abstract monochrome plant against concrete placeholder"></div>
+              <div class="project-meta">
+                <h3>Resistência</h3>
+                <p>Nature · Urban pressure · 2026</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <a href="#" aria-label="Open Domestic Silence project">
+              <div class="project-image landscape image-silencio" role="img" aria-label="Abstract monochrome interior placeholder"></div>
+              <div class="project-meta">
+                <h3>Domestic Silence</h3>
+                <p>Absence · Interior · 2026</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="project reveal">
+            <a href="#" aria-label="Open Terra Silenciosa project">
+              <div class="project-image portrait image-terra" role="img" aria-label="Abstract monochrome landscape placeholder"></div>
+              <div class="project-meta">
+                <h3>Terra Silenciosa</h3>
+                <p>Alentejo · Memory · Ongoing</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about section-pad" aria-labelledby="about-title">
+        <div class="about-image reveal">
+          <img src="assets/caleira-portrait.jpg" alt="Portrait of CALEIRA" />
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">CALEIRA is a Portuguese visual artist working with black-and-white photography.</h2>
+          <p>His practice explores silence, territory, absence and the subtle traces of human presence. Through landscapes, architecture and everyday spaces, he creates images that move between documentary observation and poetic interpretation.</p>
+          <p>Working in long-term photographic series, CALEIRA is interested in the tension between nature and the built environment, memory and transformation.</p>
+          <p class="location">Based in Portugal.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-pad" aria-labelledby="contact-title">
+        <p class="eyebrow reveal">Contact</p>
+        <div class="contact-grid reveal">
+          <h2 id="contact-title">Exhibitions, publications<br>and collaborations.</h2>
+          <div class="contact-links">
+            <a href="mailto:studio@caleira.art">studio@caleira.art</a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> CALEIRA</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
